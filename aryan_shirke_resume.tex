@@ -1,0 +1,350 @@
+%-------------------------
+% Resume in Latex
+% Author
+% License : MIT
+%------------------------
+
+%---- Required Packages and Functions ----
+
+\documentclass[a4paper,11pt]{article}
+\usepackage{latexsym}
+\usepackage{color}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{0pt}
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\geometry{left=1.4cm, top=0.8cm, right=1.2cm, bottom=1cm}
+% Adjust margins
+%\addtolength{\oddsidemargin}{-0.5in}
+%\addtolength{\evensidemargin}{-0.5in}
+%\addtolength{\textwidth}{1in}
+\usepackage[most]{tcolorbox}
+\tcbset{
+	frame code={}
+	center title,
+	left=0pt,
+	right=0pt,
+	top=0pt,
+	bottom=0pt,
+	colback=gray!20,
+	colframe=white,
+	width=\dimexpr\textwidth\relax,
+	enlarge left by=-2mm,
+	boxsep=4pt,
+	arc=0pt,outer arc=0pt,
+}
+
+\urlstyle{same}
+
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item{
+    \textbf{#1}{\hspace{0.5mm}#2 \vspace{-0.5mm}}
+  }
+}
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1}\hspace{0.3mm}#2 & \textit{\small{#3}}
+    \end{tabular*}
+    \vspace{-2mm}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#4}} \\
+        \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#3}} \\
+        \footnotesize{\textit{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+% \renewcommand{\labelitemii}{$\circ$}
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=0mm]}
+\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
+\newcommand{\resumeItemListStart}{\begin{justify}\begin{itemize}[leftmargin=3ex, rightmargin=2ex, noitemsep,labelsep=1.2mm,itemsep=0mm]\small}
+
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
+\newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\end{justify}\vspace{-2mm}}
+\newcommand{\cvsection}[1]{%
+\vspace{2mm}
+\begin{tcolorbox}
+    \textbf{\large #1}
+\end{tcolorbox}
+    \vspace{-4mm}
+}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+%---- End of Packages and Functions ------
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%
+%%%%%% DEFINE ELEMENTS HERE %%%%%%%
+\newcommand{\name}{Aryan Santosh Shirke} % Your Name
+\newcommand{\course}{Bachelor of Technology (B.Tech) in Computer Science} % Your Program
+\newcommand{\roll}{21BCS111} % Your Roll No.
+\newcommand{\phone}{9769202347} % Your Phone Number
+\newcommand{\emaila}{shirke.aryan223@gmail.com} %Email 1
+\newcommand{\emailb}{21bcs111@iiitdwd.ac.in} %Email 2
+
+
+
+
+\begin{document}
+\fontfamily{cmr}\selectfont
+%----------HEADING-----------------
+
+
+\parbox{2.35cm}{%
+\includegraphics[width=2cm,clip]{iiitdwd.jpg}
+}
+\parbox{\dimexpr\linewidth-2.8cm\relax}{
+\begin{tabularx}{\linewidth}{L r} \\
+  \textbf{\Large \name} & {\raisebox{0.0\height}{\footnotesize \faPhone}\ +91 \phone}\\
+  {Roll No: 21bcs111} & \href{mailto:\emaila}{\raisebox{0.0\height}{\footnotesize \faEnvelope}\ {\emaila}} \\
+  \course &  \href{mailto:\emailb}{\raisebox{0.0\height}{\footnotesize \faEnvelope}\ {\emailb}}\\
+  {Computer Science and Engineering} &  \href{https://github.com/HiBorn4}{\raisebox{0.0\height}{\footnotesize \faGithub}\ {GitHub}} \\
+  {Indian Institute of Information and Technology Dharwad} & \href{https://www.linkedin.com/in/aryan-shirke/}{\raisebox{0.0\height}{\footnotesize \faLinkedin}\ {LinkedIn}}
+\end{tabularx}
+}
+% \parbox{3.0cm}{%
+% \flushright \includegraphics[width=2cm,clip]{nitp_logo.png}
+% }
+
+%-----------EDUCATION-----------
+\section{\textbf{Education}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      { Indian Institute of Information and Technology Dharwad}{CGPA: 7.86 || SGPA(V Sem): 7.74}
+      % {SGPA: 7.74}
+      {Bachelor of Technology in Computer Science Engineering}{2025}
+    \resumeSubheading
+      { Pace Junior Science College}{Percentage: 88\%}
+      {Board of Intermediate Education, State}{2021}
+    \resumeSubheading
+      { St. Paul High School}{Percentage: 85.8\%}
+      {Board of Secondary Education, State}{2019}
+  \resumeSubHeadingListEnd
+\vspace{-5.5mm}
+%
+
+%-----------Achievements-----------------
+\section{\textbf{Research Internship}}
+
+\resumeProject
+      { Radio Waves} %Project Name
+      {Guide: Prof. Matthew Caeser} %Project Name, Location Name
+      {University of Illinois Urbana Champaign}
+      {Summer 2023}
+      % {24th May 2023} %Event Dates
+
+      \resumeItemListStart
+            \item {Design secure algorithms for sender-drone connection, blocking jamming signals.}
+            \item {Implement and test data protection algorithms.}
+            \item {Contribute to advancing security measures and innovative solutions in drone communication.}
+    \resumeItemListEnd
+
+\resumeProject
+      {ML-Powered Malware Detection} % Project Name
+      {Guide: Prof. Yen Chen} % Professor Name, 
+      {Northeastern University} % Location Name
+      {Winter 2023} % Event Dates
+      \resumeItemListStart
+            \item {Engineered a robust and adaptive malware detection system.}
+            \item {Tailored machine learning algorithms for analyzing ETW trace data.}
+            \item { Aimed for higher accuracy and faster malware identification.}
+    \resumeItemListEnd
+
+% %-----------EXPERIENCE-----------------
+% \section{\textbf{Experience}}
+%   \resumeSubHeadingListStart
+%     \resumeSubheading
+%       {Company Name}{City}
+%       {Your Role}{Event dates}
+%       \vspace{-2.0mm}
+%       \resumeItemListStart
+%     \item {Work description line 1}
+%     \item {Work description line 2}
+%     \resumeItemListEnd
+
+%     \vspace{-3.0mm}
+
+%     \resumeSubheading
+%       {Company Name}{City}
+%       {Your Role}{Event dates}
+%       \vspace{-2.0mm}
+%       \resumeItemListStart
+%     \item {Work description line 1}
+%     \item {Work description line 2}
+%     \resumeItemListEnd
+
+%   \resumeSubHeadingListEnd
+% \vspace{-8.5mm}
+
+%-----------PROJECTS-----------------
+\section{\textbf{Projects}}
+\resumeSubHeadingListStart
+
+    \resumeProject
+      { DreamHome} %Project Name
+      {Guide: Prof. Pramod Yelmewad} %Project Name, Location Name
+      {Spring 2023}
+      {29th April 2023} %Event Dates
+
+      \resumeItemListStart
+        \item {Tools \& Technologies used: ReactJS, SQL, NodeJS}
+        \item {Utilized backend technologies such as NodeJS and SQL to establish a connection between the website and the underlying database, enabling seamless retrieval and display of query results.}
+        \item {Designed a scalable, secure, and user-friendly system with a modern interface to meet client requirements and exceed expectations.}
+        \item {Developed a robust role-based model to streamline operations, enhance productivity, and improve user experience.}
+        
+    \resumeItemListEnd
+    \vspace{-2mm}
+
+    % \resumeProject
+    %   { TravelGenie} %Project Name
+    %   {Guide: Prof. Uma Sheshadri} %Project Name, Location Name
+    %   {Spring 2023}
+    %   {15th April 2023} %Event Dates
+
+    %   \resumeItemListStart
+    %     \item {Tools \& Technologies used: Flutter, Dart, Firebase, Parse API, REST API}
+    %     \item {Integrated flight and train booking functionality to enable convenient ticket management.}
+    %     \item {Collaborated with a multidisciplinary team of developers, designers, and testers to deliver a high-quality and reliable travel app within project timelines.}
+    %     \item {Implemented interactive maps for easy navigation and displaying journey stops.}
+    %     \item {Included features such as an expense tracker, currency conversion, and translation for enhanced travel convenience.}
+
+    \resumeProject
+      {AutomatedAttendanceML} %Project Name
+      {Guide: Prof. Vivekraj} %Project Name, Location Name
+      {Spring 2024}
+      {15th April 2024} %Event Dates
+
+      \resumeItemListStart
+        \item {Employed image detection in machine learning for the automated and accurate tracking of attendance, eliminating manual processes.}
+        \item {Implemented facial recognition algorithms to ensure precise identification, enhancing security and minimizing the risk of attendance fraud.}
+        \item {Seamlessly integrated the image detection system with attendance databases, streamlining the process and reducing administrative efforts.}
+        \item {Implemented interactive maps for easy navigation and displaying journey stops.}
+        \item {Utilized machine learning capabilities to generate detailed attendance reports, offering insights and facilitating data-driven decision-making in educational or corporate settings.}
+    \resumeItemListEnd
+    \vspace{-2mm}
+
+
+  \resumeSubHeadingListEnd
+\vspace{-5.5mm}
+
+
+%-----------Technical skills-----------------
+\section{\textbf{Technical Skills and Interests}}
+ \begin{itemize}[leftmargin=0.05in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C, C++, Python, Java, HTML, LATEX, CSS, JavaScript, SQL, Solidity, Flutter, Dart} \newline \\
+     \textbf{Developer Tools}{: Amazon Web Services (AWS), VirtualBox, Postman, Gradle, Git and Github, Sublime Text, Android Studio, PyCharm, IntelliJ IDEA, Eclipse, Visual Studio Code} 
+     \newline \\
+     \textbf{Frameworks}{: ReactJS, NodeJS, ExpressJS, NextJS, Django} 
+     \newline \\
+     \textbf{Cloud/Databases}{: Amazon Web Services (AWS), Google Cloud Platform (GCP), Firebase, Parse, MongoDB Atlas, Microsoft SQL Server, MySQL, Oracle Database}
+     \newline \\
+     \textbf{Areas of Interest}{: Web and Mobile App Development, Computer Networks, Database Management Systems, Software Engineering, Cybersecurity, Artificial Intelligence (AI) and Machine Learning} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+
+%-----------Courses Undertaken-----------------
+\section{\textbf{COURSES UNDERTAKEN}}
+ \begin{itemize}[leftmargin=0.05in, label={}]
+    \small{\item{
+     \textbf{Core Courses}{: Data Structures and Algorithms, Problem Solving through Programming, Design and Analysis of
+        Algorithms, Object Oriented Programming, Operating System, Theory Of Computation, Software Engineering, Database Management Systems, Computer Networks, Artificial Intelligence, Machine Learning*, Machine Learning for Speech and Computer Vision*, Applied Linear Algebra for Machine Learning*, Advance Algorithm Design*, Image Processing and Computer Vision*} \newline \\
+    \textbf{Other Relevant Courses}{: Calculus, Economics, Maths for Computer Science, Physics for Information Technology,
+        Probability, Discrete Mathematics, Linear Algebra, Statistics for Computer Science} \newline \\
+    \textbf{Labs}{: Data Structures and Algorithms, Microprocessors and Microcontrollers, Computer Architecture, Operating Systems, Database Management Systems, Computer Networks} \newline \\
+    \textbf{* Marked courses will be completed by May 2024.}{} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+ %-----------Achievements-----------------
+\section{\textbf{Achievements}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+\resumePOR{ } % Award
+    {\textbf{All India Rank 20432} in JEE Advanced out of 150k candidates in India} % Event
+    {2021} %Event Year
+
+\resumePOR{ } % Award
+    {\textbf{All India Rank 33264} in JEE Mains out of 1.5M candidates in India} % Event
+    {2021} %Event Year
+\resumePOR{ } % Award
+    {State Rank \textbf{2502} in MH Common Entrance Test out of 130k candidates in the state of Maharashtra} % Event
+    {2021} %Event Year
+\resumeSubHeadingListEnd
+\vspace{-5mm}
+
+%-----------Positions of Responsibility-----------------
+\section{\textbf{Positions of Responsibility}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+\resumePOR{    E-Cell: } % Position
+    {Planned and hosted an educational event on Intraday Trading with a Guest Speakers.} % Club,Event
+    {1 Year} % Tenure Period
+\resumePOR{} % Position
+    { Worked as an Organizer in Media and Marketing in Habba, IIIT Dharwad.} % Club,Event
+    {2 Years} % Tenure Period
+\resumePOR{} % Position
+    { Worked as an Organizer in Hospitality and Public Relations in Habba, IIIT Habba.} % Club,Event
+    {2 Years} % Tenure Period
+\resumePOR{} % Position
+    {  Led five teams, orchestrated college Ganpati Festival, outshining cultural club despite challenges.} % Club,Event
+    {2 Years} % Tenure Period
+\resumeSubHeadingListEnd
+\vspace{-5mm}
+
+%-------------------------------------------
+\end{document}

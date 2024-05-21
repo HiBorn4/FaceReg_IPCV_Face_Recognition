@@ -1,0 +1,5 @@
+.ipynb_checkpoints
+.venv
+test_data
+tf-virtual-env
+train_data

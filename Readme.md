@@ -1,0 +1,2 @@
+1. The numbers present in "obj.names" file are mapped to roll numbers using the "obj_roll_num.json".
+2. The object ids' used in the annotations are the index of each number in the "obj.names" file starting from 0. Example: the number '3' is mapped to object_id '24' in the annotation files (.txt file) [it represents the roll number "21BCS011"] and number '8' is mapped to object_id '4' in the annotations [it represents the roll number "21BCS033"].
