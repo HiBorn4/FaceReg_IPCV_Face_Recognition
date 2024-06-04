@@ -1,5 +1,9 @@
 .ipynb_checkpoints
 .venv
+images
+labels
+myenv
+runs
 test_data
 tf-virtual-env
 train_data
