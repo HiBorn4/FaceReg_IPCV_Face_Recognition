@@ -97,12 +97,12 @@ The model achieved satisfactory accuracy in detecting and recognizing faces in c
 
 ### Confusion Matrix
 
-![Confusion Matrix](runs/detect/train15/confusion_matrix_normalized.png)
+![Confusion Matrix](results/confusion_matrix_normalized.png)
 
 ### Sample Detections
 
-![Sample Detection 1](runs/detect/train15/val_batch1_pred.jpg)
-![Sample Detection 2](runs/detect/train15/train_batch80821.jpg)
+![Sample Detection 1](results/train_batch80820.jpg)
+![Sample Detection 2](results/val_batch0_labels.jpg)
 
 ## Future Work
 
