@@ -1,0 +1,22 @@
+# Essential packages
+numpy==1.24.2
+pandas==1.5.3
+matplotlib==3.7.1
+scikit-learn==1.2.2
+
+# Deep learning and computer vision packages
+torch==2.0.0
+torchvision==0.15.0
+ultralytics==8.2.21
+opencv-python-headless==4.7.0.72
+
+# Data handling and processing
+roboflow==0.2.16
+Pillow==9.4.0
+
+# Jupyter notebook
+jupyter==1.0.0
+
+# Utilities
+tqdm==4.64.1
+seaborn==0.12.2
